@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">android_web_municipio</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_agregar_lista">AgregarLista</string>
+    <string name="title_activity_formatofila">formatofila</string>
+    <string name="title_activity_modificar_lista">ModificarLista</string>
+    <string name="title_activity_fotomultas">Fotomultas</string>
+</resources>

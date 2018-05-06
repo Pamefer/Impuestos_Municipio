@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ramiro.liststore.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:text="Fotomultas Moviles"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/primera"
+        android:gravity="center_horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:weightSum="1">
+
+        <Button
+            android:background="#5ADAEE"
+            android:id="@+id/agre_usu"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="Agregar Usuario"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:layout_alignTop="@+id/agre_usu"
+            android:layout_toRightOf="@+id/agre_usu"
+            android:layout_toEndOf="@+id/agre_usu"
+            android:layout_weight="0.29" />
+
+        <Button
+            android:background="#8AF6D5"
+            android:id="@+id/agre_foto"
+            android:layout_width="155dp"
+            android:layout_height="150dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="Agregar Fotomulta"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:weightSum="1">
+
+        <Button
+            android:background="#5ADAEE"
+            android:id="@+id/listar_usu"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="Listar  Usuarios"
+            android:drawableLeft="@android:drawable/ic_menu_view"
+            android:layout_alignTop="@+id/listar_usu"
+            android:layout_toRightOf="@+id/listar_usu"
+            android:layout_toEndOf="@+id/listar_usu"
+            android:layout_weight="0.29" />
+
+        <Button
+            android:background="#8AF6D5"
+            android:id="@+id/listar_foto"
+            android:layout_width="155dp"
+            android:layout_height="150dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="Listar Fotomulta"
+            android:drawableLeft="@android:drawable/ic_menu_view"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

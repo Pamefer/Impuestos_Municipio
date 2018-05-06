@@ -1,0 +1,17 @@
+#Evitar que se liste los directorios y archivos
+	#IndexIgnore *
+
+#Listar los directorios y archivos
+	Options +Indexes
+
+#Denegar el acceso a las Ip´s
+	#deny from 172.18.130.245
+	#deny from 172.18.130.*
+	#allow from 172.18.130.0/150
+
+#Configurar mis archivos de error 404 
+	ErrorDocument 404 /web_municipio/municipio/public_html/error1.php
+
+
+#Configurar el sistema de archivos utf-8
+	AddDefaultCharset utf-8
